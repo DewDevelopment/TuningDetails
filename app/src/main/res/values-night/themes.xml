@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+    <!-- Base application theme. -->
+    <style name="Theme.tuningdetails" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#00A1A4</item>
+        <item name="colorPrimaryVariant">#007B87</item>
+        <item name="colorOnPrimary">#004F84</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#00A1A4</item>
+        <item name="colorSecondaryVariant">#007B87</item>
+        <item name="colorOnSecondary">#004F84</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" >#00A1A4</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

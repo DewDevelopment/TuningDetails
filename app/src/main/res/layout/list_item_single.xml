@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/cardView"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:scrollbars="vertical"
+    android:clickable="false"
+    android:focusable="false"
+    app:cardCornerRadius="40dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="218dp"
+        android:background="@drawable/gradient_drawable">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/NameDetail"
+            android:textColor="#B3E5FC"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ProfessionName"
+            android:layout_width="238dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            android:textColor="#B3E5FC"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textView1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/NameCompany"
+            android:textColor="#B3E5FC"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+        <TextView
+            android:id="@+id/CompanyName"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            android:textColor="#BBDEFB"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/ProfessionName" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="136dp"
+            android:layout_marginBottom="136dp"
+            android:text="Year"
+            android:textColor="#B3E5FC"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/year1"
+            android:layout_width="65dp"
+            android:layout_height="19dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="136dp"
+            android:text="TextView"
+            android:textColor="#B3E5FC"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toEndOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="136dp"
+            android:text="@string/Description"
+            android:textColor="#B3E5FC"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="355dp"
+            android:layout_height="121dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="TextView"
+            android:textColor="#BBDEFB"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

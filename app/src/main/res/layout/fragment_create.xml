@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.CreateFragment"
+    android:background="@drawable/gradient_drawable">
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/days_one"
+        android:gravity="center_horizontal"
+        android:text="@string/Text_name"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true"
+            android:orientation="vertical"
+            android:scrollIndicators="bottom"
+            android:scrollbarAlwaysDrawVerticalTrack="true">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="210dp"
+                android:layout_height="280dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10sp"
+                android:contentDescription="@string/detailsimage"
+                android:cropToPadding="true"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_lmovie_placeholder"
+                tools:src="@drawable/ic_lmovie_placeholder"
+                tools:visibility="visible" />
+
+            <EditText
+                android:id="@+id/NameDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:ems="10"
+                android:hint="@string/NameDetail"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColorHint="#FFFFFF"
+                android:textSize="18sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/NameCompany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:ems="10"
+                android:hint="@string/NameCompany"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColorHint="#E1F5FE"
+                android:textSize="18sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:ems="10"
+                android:hint="@string/DateBuyDetail"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColorHint="#FFF3E0"
+                android:textSize="18sp"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/Description"
+                android:inputType="textMultiLine"
+                android:minHeight="100dp"
+                android:textColorHint="#FFF3E0"
+                tools:ignore="Autofill" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:text="@string/SelectCategories"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/action_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:text="Под капотом"
+                    android:textColor="#455A64"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/love_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:text="Внешний вид спереди"
+                    android:textColor="#455A64"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/animation_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:text="Внешний вид сзади"
+                    android:textColor="#455A64"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/horror_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:text="Под машиной"
+                    android:textColor="#455A64"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/drama_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checkable="true"
+                    android:text="Салон"
+                    android:textColor="#455A64"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:padding="10sp"
+                android:text="@string/Create"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/BtnHome"
+        android:layout_width="122dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/Main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/BtnSpisok"
+        android:layout_width="122dp"
+        android:layout_height="60dp"
+        android:text="@string/List"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/BtnSettings"
+        app:layout_constraintStart_toEndOf="@+id/BtnHome" />
+
+    <Button
+        android:id="@+id/BtnSettings"
+        android:layout_width="122dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/Settings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

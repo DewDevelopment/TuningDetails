@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tuning Details</string>
+    <string name="hello_blank_fragment">Я новый фрагмент</string>
+    <string name="Profile">Профиль</string>
+    <string name="Themes">Темы приложения</string>
+    <string name="Create">Создать</string>
+    <string name="Main">Главная</string>
+    <string name="List">Список</string>
+    <string name="Settings">Настройки</string>
+    <string name="Text_name">Tuning Details</string>
+    <string name="NameCompany">Название фирмы авто</string>
+    <string name="SendToSpisok">Отправить</string>
+    <string name="Login">Логин</string>
+    <string name="SwipeRight">Свайпни вправо</string>
+    <string name="Password">Пароль</string>
+    <string name="Email">Емейл</string>
+    <string name="RetypePassword">Повтори Пароль</string>
+    <string name="Registration">Регистрация</string>
+    <string name="SwipeLeft">Свайпни Влево</string>
+    <string name="Phone">Номер телефона</string>
+    <string name="NameDetail">Название детали</string>
+    <string name="DateBuyDetail">Дата покупки детали</string>
+    <string name="Update">Обновить</string>
+    <string name="Privacy">Конфиденциальность</string>
+    <string name="Exit">Выход</string>
+    <string name="Description">Описание</string>
+    <string name="PleaseWait">Пожалуйста подождите…</string>
+    <string name="detailsimage">Фото детали</string>
+    <string name="SelectCategories">Выбери категории:</string>
+    <string name="Devs">Разработчики</string>
+    <string name="profileDelete">Удалить профиль</string>
+</resources>
