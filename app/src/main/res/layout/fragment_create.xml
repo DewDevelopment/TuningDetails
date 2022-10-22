@@ -108,59 +108,6 @@
                 android:textColor="@color/white"
                 android:textSize="18sp" />
 
-            <com.google.android.material.chip.ChipGroup
-                android:id="@+id/chips"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10sp">
-
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/action_chip"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:checkable="true"
-                    android:text="Под капотом"
-                    android:textColor="#455A64"
-                    android:textSize="16sp" />
-
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/love_chip"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:checkable="true"
-                    android:text="Внешний вид спереди"
-                    android:textColor="#455A64"
-                    android:textSize="16sp" />
-
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/animation_chip"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:checkable="true"
-                    android:text="Внешний вид сзади"
-                    android:textColor="#455A64"
-                    android:textSize="16sp" />
-
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/horror_chip"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:checkable="true"
-                    android:text="Под машиной"
-                    android:textColor="#455A64"
-                    android:textSize="16sp" />
-
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/drama_chip"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:checkable="true"
-                    android:text="Салон"
-                    android:textColor="#455A64"
-                    android:textSize="16sp" />
-
-            </com.google.android.material.chip.ChipGroup>
-
             <Button
                 android:id="@+id/button2"
                 android:layout_width="match_parent"

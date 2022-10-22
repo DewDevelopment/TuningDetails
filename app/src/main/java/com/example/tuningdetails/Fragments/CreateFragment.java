@@ -20,8 +20,6 @@ import androidx.navigation.Navigation;
 
 import com.example.tuningdetails.Dialogs.LoadingDialog;
 import com.example.tuningdetails.R;
-import com.google.android.material.chip.Chip;
-import com.google.android.material.chip.ChipGroup;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
@@ -41,7 +39,6 @@ public class CreateFragment extends Fragment {
     ImageView img;
     Boolean imgSet = false;
     Uri imgUri;
-    ChipGroup chips;
     Button submitBtn;
     EditText DetailName, CompanyName, desc, year1;
     FirebaseFirestore db;
@@ -54,7 +51,6 @@ public class CreateFragment extends Fragment {
 
         View root = inflater.inflate(R.layout.fragment_create, container, false);
         img = root.findViewById(R.id.imageView2);
-        chips = root.findViewById(R.id.chips);
         submitBtn = root.findViewById(R.id.button2);
         DetailName = root.findViewById(R.id.NameDetail);
         CompanyName = root.findViewById(R.id.NameCompany);
@@ -102,11 +98,6 @@ public class CreateFragment extends Fragment {
                 desc.requestFocus();
                 return;
             }
-            List<String> categories = getCatogories();
-            if(categories.size() == 0){
-                Toast.makeText(getContext(), "Select atleast 1 category", Toast.LENGTH_SHORT).show();
-                return;
-            }
             if(!imgSet){
                 Toast.makeText(getContext(), "Please add image", Toast.LENGTH_SHORT).show();
                 return;
@@ -117,7 +108,6 @@ public class CreateFragment extends Fragment {
             docData.put("CompanyName", NameCompany);
             docData.put("year1", year);
             docData.put("desc", description);
-            docData.put("categories", categories);
 
             uploadImage(docData);
         });
@@ -139,16 +129,6 @@ public class CreateFragment extends Fragment {
             e.printStackTrace();
         }
 
-    }
-    private List<String> getCatogories(){
-        List<String> checked = new ArrayList<>();
-        for(int i=0; i<chips.getChildCount(); i++){
-            Chip chip = (Chip) chips.getChildAt(i);
-            if(chip.isChecked()){
-                checked.add(chip.getText().toString());
-            }
-        }
-        return  checked;
     }
 
     private void uploadImage(Map<String, Object> docData){
@@ -193,10 +173,6 @@ public class CreateFragment extends Fragment {
         CompanyName.getText().clear();
         year1.getText().clear();
         desc.getText().clear();
-        for(int i=0; i<chips.getChildCount(); i++){
-            Chip chip = (Chip) chips.getChildAt(i);
-            chip.setChecked(false);
-        }
     }
 
     @Override
