@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "194424274902",
+    "firebase_url": "https://tuningdetails-eb90a-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "tuningdetails-eb90a",
+    "storage_bucket": "tuningdetails-eb90a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194424274902:android:5daa72b2c248d360dcee77",
+        "android_client_info": {
+          "package_name": "com.example.tuningdetails"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "194424274902-oecn6dm8ch9a4pg9aeub50gjc2piins5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tuningdetails",
+            "certificate_hash": "c68c57a6b5edd50bbefd126ac0f73299dfc0298a"
+          }
+        },
+        {
+          "client_id": "194424274902-ns0fminp6ed57b8l201phf9d7tgq6tib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9fos7o3uXxbHqGFuc1bvFVYyy3aWJXC8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "194424274902-ns0fminp6ed57b8l201phf9d7tgq6tib.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
