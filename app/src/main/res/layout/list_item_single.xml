@@ -24,14 +24,14 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="5dp"
-            android:text="@string/NameDetail"
+            android:text="@string/DetailName"
             android:textColor="#B3E5FC"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/ProfessionName"
+            android:id="@+id/NameDetail"
             android:layout_width="238dp"
             android:layout_height="20dp"
             android:layout_marginStart="16dp"
@@ -70,7 +70,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toBottomOf="@+id/ProfessionName" />
+            app:layout_constraintTop_toBottomOf="@+id/NameDetail" />
 
         <TextView
             android:id="@+id/textView3"

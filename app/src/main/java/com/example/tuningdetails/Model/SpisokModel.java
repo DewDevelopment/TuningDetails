@@ -1,7 +1,7 @@
 package com.example.tuningdetails.Model;
 
 public class SpisokModel {
-    private String DetailName ,CompanyName , year1 , desc ;
+    private String DetailName , CompanyName , year1 , desc ;
     public SpisokModel() {}
 
     public String getDetailName()

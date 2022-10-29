@@ -19,7 +19,7 @@
     <string name="Registration">Регистрация</string>
     <string name="SwipeLeft">Свайпни Влево</string>
     <string name="Phone">Номер телефона</string>
-    <string name="NameDetail">Название детали</string>
+    <string name="DetailName">Название детали</string>
     <string name="DateBuyDetail">Дата покупки детали</string>
     <string name="Update">Обновить</string>
     <string name="Privacy">Конфиденциальность</string>
